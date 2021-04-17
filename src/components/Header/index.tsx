@@ -5,7 +5,6 @@ import { SigninButton } from "../SigninButton/Index";
 import { ActiveLink } from "../ActiveLink";
 
 export function Header() {
-
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
@@ -15,7 +14,7 @@ export function Header() {
             <a>Home</a>
           </ActiveLink>
 
-          <ActiveLink href="/posts" prefetch activeClassName={styles.active}>
+          <ActiveLink href="/posts" activeClassName={styles.active}>
             <a>Posts</a>
           </ActiveLink>
         </nav>

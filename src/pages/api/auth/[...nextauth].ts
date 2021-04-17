@@ -2,6 +2,7 @@ import NextAuth from "next-auth";
 import Providers from "next-auth/providers";
 import { fauna } from "../../../services/fauna";
 import { query as q } from "faunadb";
+import { jose } from "node-jose-tools";
 
 export default NextAuth({
   providers: [

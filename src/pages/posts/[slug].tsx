@@ -16,7 +16,6 @@ interface PostProps {
 }
 
 export default function Post({ post }: PostProps) {
-  console.log(post.content);
   return (
     <>
       <Head>
@@ -26,7 +25,10 @@ export default function Post({ post }: PostProps) {
         <article className={styles.post}>
           <h1> {post.title} </h1>
           <time> {post.updatedAt} </time>
-					<div className={styles.postContent} dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div
+            className={styles.postContent}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
         </article>
       </main>
     </>
